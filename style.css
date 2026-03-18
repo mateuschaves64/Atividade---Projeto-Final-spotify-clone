@@ -2,13 +2,13 @@
         font-family: 'SpotifyMix';
         src: url('fontes/spotify_Mix_UI/spotify_mix_ui_bold.otf') format('opentype');
         font-weight: bold;
-        font-style: normal;
+        font-style: normal; /*Adiciona ao site a fonte spotify mix*/
     }
     .icone-bumpin img {
         max-width: 40px;
         height: 40px;
         cursor: pointer;
-        padding: 1px;
+        padding: 1px; /*Resolução do tamanho da imagem do icone*/
     }
     header {
         background-color: black;
@@ -301,7 +301,7 @@
         position: relative;
     }
     #musicasemalta div::after,
-    #artistaspopulares div::after {
+    #artistaspopulares div::after { /*Cria um item como o html faz, mas ele cria um elemento e atributos diretamente no css sem precisar do index ou script*/
         content: "▶";
         position: absolute;
         bottom: 80px;
@@ -321,7 +321,6 @@
     #artistaspopulares div:hover::after {
         opacity: 1;
     }
-    #plus {
         text-align: right;
         cursor: pointer;
     }
