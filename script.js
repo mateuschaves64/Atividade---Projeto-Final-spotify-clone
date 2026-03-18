@@ -1,4 +1,4 @@
-const mostrartudo1 = document.getElementById('mostr1');
+const mostrartudo1 = document.getElementById('mostr1'); //Seção que define os códigos de interação como o hover faz
 const mostrartudo2 = document.getElementById('mostr2');
 const criarplaylist = document.getElementById('criplay');
 const ptbr = document.getElementById('btn-ptbr');
@@ -15,7 +15,7 @@ const playcri = document.getElementById('criplay');
 const casa = document.getElementById('casa');
 const btnf = document.getElementById('footerbtn');
 
-mostrartudo1.addEventListener('mouseenter', function() {
+mostrartudo1.addEventListener('mouseenter', function() { //Sistema que grifa o texto "mostrar mais"
 
     mostrartudo1.addEventListener('mouseenter', () => {
         mostrartudo1.style.textDecoration = 'underline';
@@ -37,7 +37,7 @@ mostrartudo2.addEventListener('mouseenter', function() {
 });
 
 
-cri.addEventListener('mouseenter', function() {
+cri.addEventListener('mouseenter', function() { //Faz o icone ter uma coloração mais viva quando encosta o mouse
 
     cri.addEventListener('mouseenter', () => {
         cri.style.color = rgb(255, 255, 255);
@@ -48,13 +48,13 @@ cri.addEventListener('mouseenter', function() {
     });
 });
 
-premium.addEventListener('mouseenter', () => {
+premium.addEventListener('mouseenter', () => { //Amplia em 1.1 o tamanho do original
     premium.style.transform = 'scale(1.1)';
     premium.style.cursor = 'pointer';
 });
 
 
-premium.addEventListener('mouseleave', () => {
+premium.addEventListener('mouseleave', () => { //Retorna o tamanho original
     premium.style.transform = 'scale(1)';
 });
 
